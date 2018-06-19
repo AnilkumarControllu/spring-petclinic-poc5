@@ -9,11 +9,7 @@ pipeline {
   
   stages {
     
-     stage('Checkout'){    
-       steps {
-          sh "git checkout ${env.BRANCH_NAME}"               
-       }
-     }
+    
      stage ('Java Build') {
        steps {
          //sh 'mvn clean install -DskipTests'
