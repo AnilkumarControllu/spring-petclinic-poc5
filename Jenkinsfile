@@ -13,7 +13,7 @@ pipeline {
      stage ('Java Build') {
        steps {
          //sh 'mvn clean install -DskipTests'
-         sh 'mvn clean package -U'
+         sh 'mvn clean package -X'
        }
      }
      stage('Sonar') {
